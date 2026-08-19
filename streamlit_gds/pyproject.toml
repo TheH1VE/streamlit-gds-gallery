@@ -1,0 +1,7 @@
+[project]
+name = "streamlit-gds"
+version = "0.2.0"
+
+[[tool.streamlit.component.components]]
+name = "catalog"
+asset_dir = "frontend/dist"

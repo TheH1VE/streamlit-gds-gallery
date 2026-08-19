@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "streamlit-gds"
+version = "0.2.0"
+description = "Vendored Streamlit GDS runtime for the standalone component gallery"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = ["streamlit>=1.61,<1.62"]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["streamlit_gds*"]
+
+[tool.setuptools.package-data]
+streamlit_gds = ["py.typed", "frontend/dist/**/*", "frontend/dist/*"]
+
+[[tool.streamlit.component.components]]
+name = "catalog"
+asset_dir = "frontend/dist"

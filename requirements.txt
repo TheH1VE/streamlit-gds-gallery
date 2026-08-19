@@ -1,0 +1,5 @@
+# Install the vendored component package so Streamlit registers its assets.
+.
+
+# Runtime dependency installed by Posit Connect.
+streamlit==1.61.1
