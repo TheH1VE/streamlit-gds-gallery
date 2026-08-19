@@ -19,15 +19,28 @@ python -m venv .venv
 
 ## Deploy to Posit Connect from GitHub
 
-1. Push this repository to GitHub.
-2. In Posit Connect, create new content from the Git repository.
-3. Select `app.py` as the primary Streamlit file if Connect asks for one.
-4. Deploy from the `main` branch.
+1. Push this repository to GitHub, including the root `manifest.json`.
+2. In Posit Connect, choose **Publish > Import from Git**.
+3. Select the `main` branch.
+4. Select the repository root as the deployable directory. Connect detects it
+   from `manifest.json`, which declares `app.py` as a Streamlit entry point.
+5. Deploy the content.
 
 Posit Connect installs the vendored component package and pinned Streamlit
 runtime from `requirements.txt`. Installing the local package is required so
 Streamlit can register the compiled component assets declared in
 `pyproject.toml`. No secrets or environment variables are required.
+
+### Regenerate the deployment manifest
+
+Regenerate `manifest.json` after changing the entry point, runtime requirements,
+or files included in the deployment, then commit it with those changes:
+
+```powershell
+python -m pip install rsconnect-python
+rsconnect write-manifest streamlit --overwrite --entrypoint app.py `
+  --requirements-file requirements.txt .
+```
 
 ## Upstream source
 

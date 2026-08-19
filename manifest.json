@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "locale": "English_United Kingdom.1252",
+  "metadata": {
+    "appmode": "python-streamlit",
+    "entrypoint": "app.py"
+  },
+  "python": {
+    "version": "3.12.14",
+    "package_manager": {
+      "name": "pip",
+      "version": "26.2.1",
+      "package_file": "requirements.txt"
+    }
+  },
+  "environment": {
+    "python": {
+      "requires": ">=3.10"
+    }
+  },
+  "files": {
+    "requirements.txt": {
+      "checksum": "0723705a625a6f94dab7a8a2f57616e1"
+    },
+    ".gitattributes": {
+      "checksum": "f29d6c74babc48f53d4b3bdc839304ce"
+    },
+    ".gitignore": {
+      "checksum": "632ae182629a857f25e63b79b6f722f3"
+    },
+    ".streamlit/config.toml": {
+      "checksum": "9bbdf78a18970ee7014b6d45e62ee40a"
+    },
+    "LICENSE": {
+      "checksum": "7e0a29fd51f3373b5c5f314c05b9d40a"
+    },
+    "README.md": {
+      "checksum": "4d337ee0ecdef7d558f6cc90233d0f79"
+    },
+    "UPSTREAM.md": {
+      "checksum": "3f5cfd10900ab0023738413a196c0470"
+    },
+    "app.py": {
+      "checksum": "4b87ec5380c4899d779ed3a1e229963f"
+    },
+    "pyproject.toml": {
+      "checksum": "a680c44cdb41be2c4b5c3e29bd1768ef"
+    },
+    "streamlit_gds/__init__.py": {
+      "checksum": "37e72d3be51e3e5aff1fc1ed68605ce7"
+    },
+    "streamlit_gds/_native.py": {
+      "checksum": "f0e85a077accf51893ced1a9385ed895"
+    },
+    "streamlit_gds/_runtime.py": {
+      "checksum": "dcc68a79c6767cace6e0e90c28907129"
+    },
+    "streamlit_gds/_validation.py": {
+      "checksum": "3abb4fbb0489bbea4b2eef2898d91396"
+    },
+    "streamlit_gds/catalogue.py": {
+      "checksum": "54f1b4ee6341f780f5de54acacfcc504"
+    },
+    "streamlit_gds/components.py": {
+      "checksum": "9fcf4c62622ef6ae236500346f57c067"
+    },
+    "streamlit_gds/frontend/dist/index-BKhOPgoK.js": {
+      "checksum": "04acf53fa94c7c81e1dd7d5166cca5ab"
+    },
+    "streamlit_gds/frontend/dist/index-Q7ZTFSk1.css": {
+      "checksum": "7413e2b99e5a9bd13f47aa2b6534f089"
+    },
+    "streamlit_gds/models.py": {
+      "checksum": "2b11a5ae23f583a57f62a9e8b3327e9d"
+    },
+    "streamlit_gds/py.typed": {
+      "checksum": "68b329da9893e34099c7d8ad5cb9c940"
+    },
+    "streamlit_gds/pyproject.toml": {
+      "checksum": "715eb95e7dae34244e704a4c3fb65881"
+    },
+    "streamlit_gds/styles.py": {
+      "checksum": "4fbf4bd54883d460fa1aa7b099d168c5"
+    }
+  }
+}
